@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Mini Statistics
-Plugin URI: http://www.gigahertz.net.in
+Plugin URI: https://wordpress.org/plugins/mini-statistics/
 Description: This plugin is a small and simple Users Statistics and Comments Statistics plugin for WordPress.
 Version: 1.0.0
 Author: Ayan Debnath
@@ -96,12 +96,7 @@ function ministat_page() {
 			
 			<div class="clear"><hr /></div>
 			
-			
-			
-			
-			
-			
-			
+			<!-- MORE IN NEAR FUTURE -->
 	
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 === Mini Statistics ===
 Contributors: iosoft, ayandebnath
-Donate link: http://example.com/
+Donate link: https://wordpress.org/plugins/mini-statistics/
 Tags: comments, users, admin, statistics
 Requires at least: 3.0.1
 Tested up to: 4.0
@@ -19,7 +19,15 @@ This plugin is very light-weight, just 10kb, and it uses Google Charts API only 
 == Installation ==
 
 1. Unzip mini-statistics.zip and upload the mini-statistics directory to the `/wp-content/plugins/` directory.
-1. Activate the plugin through the 'Plugins' menu in WordPress.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+
+== Screenshots ==
+
+1. Mini Statistics admin page showing list of available statistics.
+2. Yearly User Registration statistics in Column Chart/Bar Diagram.
+3. Yearly User Registration statistics in Line Diagram.
+4. Yearly User Comments statistics in Column Chart/Bar Diagram.
+5. Yearly User Comments statistics in Line Diagram.
 
 == Changelog ==
 
