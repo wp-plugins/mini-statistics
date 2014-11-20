@@ -31,5 +31,8 @@ This plugin is very light-weight, just 10kb, and it uses Google Charts API only 
 
 == Changelog ==
 
-= 1.0 =
-* Alpha version
+= 1.0.1 =
+* Small bug fixing. Special thanks to Kishore Chowdhury.
+
+= 1.0.0 =
+* 1st Release version.

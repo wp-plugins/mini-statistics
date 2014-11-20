@@ -3,7 +3,7 @@
 Plugin Name: Mini Statistics
 Plugin URI: https://wordpress.org/plugins/mini-statistics/
 Description: This plugin is a small and simple Users Statistics and Comments Statistics plugin for WordPress.
-Version: 1.0.0
+Version: 1.0.1
 Author: Ayan Debnath
 Author URI: http://about.me/ayandebnath
 License: GPLv2 or later
@@ -138,7 +138,8 @@ function comments_ministat_report() {
 				$wpdb->prepare( 
 					"
 					SELECT count(*) FROM $wpdb->comments
-						WHERE MONTH(comment_date) = %d 
+						WHERE comment_approved = 1
+							AND MONTH(comment_date) = %d 
 							AND YEAR(comment_date) = %d
 					" 
 				, $m, $y)
