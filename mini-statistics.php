@@ -3,7 +3,7 @@
 Plugin Name: Mini Statistics
 Plugin URI: https://wordpress.org/plugins/mini-statistics/
 Description: This plugin is a small and simple Users Statistics and Comments Statistics plugin for WordPress.
-Version: 1.0.1
+Version: 1.0.2
 Author: Ayan Debnath
 Author URI: http://about.me/ayandebnath
 License: GPLv2 or later
@@ -120,14 +120,12 @@ function comments_ministat_report() {
 		echo '<h2>Comments Statistics</h2>';
 	
 	$start_date = intval($wpdb->get_var( 
-		$wpdb->prepare( 
-			"
-			SELECT year(comment_date) FROM $wpdb->comments
-				WHERE comment_approved = 1
-				ORDER BY comment_date
-				LIMIT 1
-			" 
-		, null)
+		"
+		SELECT year(comment_date) FROM $wpdb->comments
+			WHERE comment_approved = 1
+			ORDER BY comment_date
+			LIMIT 1
+		"
 	));
 	
 	$tmp = '';
@@ -228,13 +226,11 @@ function users_ministat_report() {
 		echo '<h2>Users Statistics</h2>';
 	
 	$start_date = intval($wpdb->get_var( 
-		$wpdb->prepare( 
-			"
-			SELECT year(user_registered) FROM $wpdb->users
-				ORDER BY user_registered
-				LIMIT 1
-			" 
-		, null)
+		"
+		SELECT year(user_registered) FROM $wpdb->users
+			ORDER BY user_registered
+			LIMIT 1
+		"
 	));
 	
 	$tmp = '';

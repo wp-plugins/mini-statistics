@@ -31,6 +31,9 @@ This plugin is very light-weight, just 10kb, and it uses Google Charts API only 
 
 == Changelog ==
 
+= 1.0.2 =
+* Small PHP-Notice error fixing. Special thanks to Ayan Debnath.
+
 = 1.0.1 =
 * Small bug fixing. Special thanks to Kishore Chowdhury.
 
